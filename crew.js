@@ -375,7 +375,7 @@ originalDict = {
         "threePlayers": 3,
         "fourPlayers": 3,
         "fivePlayers": 4,
-        "task": "Ich gewinne\neinen Stich mit Wert größer\n(23/28/31, ohne ZBDK)"
+        "task": "Ich gewinne\neinen Stich mit Wert größer\n23/28/31\n(ohne ZBDK)"
     },
     64: {
         "threePlayers": 3,
