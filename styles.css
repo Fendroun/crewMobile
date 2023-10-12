@@ -130,6 +130,26 @@ body {
 
 
 @media only screen and (max-width: 780px) {
+
+    .red-suit {
+    font-size: 29px; /*vorher 35 */
+  }
+
+  .black-suit {
+    font-size: 29px;
+  }
+
+  .crown {
+    font-size: 29px;
+  }
+
+  .numbers {
+    font-size:29px;
+  }
+
+  .words {
+    font-size:22px;
+  }
    .task {
     height: 140px;
     width: 90px;
