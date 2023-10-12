@@ -561,7 +561,7 @@ originalDict = {
         "threePlayers": 3,
         "fourPlayers": 3,
         "fivePlayers": 4,
-        "task": "Ich gewinne\neinen Stich mit Wert kleiner\n(8/12/16, ohne ZBDK)"
+        "task": "Ich gewinne\neinen Stich mit Wert kleiner\n8/12/16\n(ohne ZBDK)"
     },
     95: {
         "threePlayers": 1,
@@ -739,7 +739,7 @@ function colorSuits(inputString) {
       // verschiedenes
       inputString = inputString.replace(/(A|X)/g, (match) => `<span class="numbers">${match}</span>`);
       // Wörter
-      inputString = inputString.replace(/(mind|genau|gleich|nur|größer|kleiner|Stiche|Stich|alle Karten|weniger Stiche|mehr Stiche|eröffne|gerade|ungerade|ersten|letzten|beiden|keinen)/g, (match) => `<span class="words">${match}</span>`);
+      inputString = inputString.replace(/(mind|genau|gleich|nur|größer|kleiner|weniger Stiche|mehr Stiche|Stiche|Stich|alle Karten|eröffne|gerade|ungerade|ersten|letzten|beiden|keinen)/g, (match) => `<span class="words">${match}</span>`);
       // Zahlen
       inputString = inputString.replace(/[0-9x]/g, (match) => `<span class="numbers">${match}</span>`);
       return inputString;
