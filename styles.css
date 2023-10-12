@@ -133,22 +133,27 @@ body {
 
     .red-suit {
     font-size: 29px; /*vorher 35 */
+        font-weight: bold;
   }
 
   .black-suit {
     font-size: 29px;
+      font-weight: bold;
   }
 
   .crown {
     font-size: 29px;
+      font-weight: bold;
   }
 
   .numbers {
     font-size:29px;
+      font-weight: bold;
   }
 
   .words {
     font-size:22px;
+      font-weight: bold;
   }
    .task {
     height: 140px;
