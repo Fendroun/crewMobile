@@ -739,7 +739,7 @@ function colorSuits(inputString) {
       // verschiedenes
       inputString = inputString.replace(/(A|X)/g, (match) => `<span class="numbers">${match}</span>`);
       // Wörter
-      inputString = inputString.replace(/(nie|mind|genau|gleich|nur|größer|kleiner|weniger Stiche|mehr Stiche|Stiche|Stich|alle Karten|eröffne|gerade|ungerade|ersten|letzten|beiden|keinen)/g, (match) => `<span class="words">${match}</span>`);
+      inputString = inputString.replace(/(in Folge|nie|mind|genau|gleich|nur|größer|kleiner|weniger Stiche|mehr Stiche|Stiche|Stich|alle Karten|eröffne|gerade|ungerade|ersten|letzten|beiden|keinen)/g, (match) => `<span class="words">${match}</span>`);
       // Zahlen
       inputString = inputString.replace(/[0-9x]/g, (match) => `<span class="numbers">${match}</span>`);
       return inputString;
