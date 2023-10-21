@@ -153,13 +153,13 @@ originalDict = {
         "threePlayers": 4,
         "fourPlayers": 4,
         "fivePlayers": 4,
-        "task": "Ich gewinne\ngleich viele\n♣ wie ♡\n(>0)"
+        "task": "Ich gewinne\ngleich viele\n♣ wie ♡\n(>null)"
     },
     27: {
         "threePlayers": 2,
         "fourPlayers": 3,
         "fivePlayers": 3,
-        "task": "Ich gewinne\ngleich viele\n♣ wie ♢ in einem Stich\n(>0)"
+        "task": "Ich gewinne\ngleich viele\n♣ wie ♢ in einem Stich\n(>null)"
     },
     28: {
         "threePlayers": 3,
@@ -201,7 +201,7 @@ originalDict = {
         "threePlayers": 1,
         "fourPlayers": 1,
         "fivePlayers": 1,
-        "task": "Ich gewinne\nmehr\n♡♡ als ♢\n(♢>0)"
+        "task": "Ich gewinne\nmehr\n♡♡ als ♢\n(♢>null)"
     },
     35: {
         "threePlayers": 3,
@@ -375,7 +375,7 @@ originalDict = {
         "threePlayers": 3,
         "fourPlayers": 3,
         "fivePlayers": 4,
-        "task": "Ich gewinne\neinen Stich mit Wert größer\n(23/28/31, ohne ZBDK)"
+        "task": "Ich gewinne\neinen Stich mit Wert größer\n23/28/31\n(ohne ZBDK)"
     },
     64: {
         "threePlayers": 3,
@@ -561,7 +561,7 @@ originalDict = {
         "threePlayers": 3,
         "fourPlayers": 3,
         "fivePlayers": 4,
-        "task": "Ich gewinne\neinen Stich mit Wert kleiner\n(8/12/16, ohne ZBDK)"
+        "task": "Ich gewinne\neinen Stich mit Wert kleiner\n8/12/16\nohne ZBDK)"
     },
     95: {
         "threePlayers": 1,
