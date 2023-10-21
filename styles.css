@@ -183,11 +183,11 @@ body {
     font-weight: bold;
   }
 
-  .black-suit {font-size: 8px}
-    .crown {font-size: 30px}
-    .numbers {font-size: 30px}
-    .black-suit {font-size: 30px}
-.words {font-size:25px }
+.black-suit {font-size: 30px;}
+.red-suit {font-size: 30px;}
+.numbers {font-size: 30px;}
+.crown {font-size: 30px;}
+.words {font-size: 22px;}
 
 } 
   
