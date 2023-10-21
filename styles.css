@@ -141,7 +141,7 @@ body {
 
 @media only screen and (max-width: 780px) {
    .task {
-    height: 148px; /*new vorher 143 */
+    height: 154px; /*new vorher 143 */
     width: 90px;
     font-size: 14px;
    }
