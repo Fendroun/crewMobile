@@ -177,7 +177,18 @@ body {
     margin-top: 20px;
     font-size: 15px;
 }
-  
+.red-suit {
+    color: rgb(105, 4, 4);
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .black-suit {font-size: 30px}
+    .crown {font-size: 30px}
+    .numbers {font-size: 30px}
+    .black-suit {font-size: 30px}
+.words {font-size:25px }
+
 } 
   
   
