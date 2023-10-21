@@ -26,6 +26,14 @@
     font-weight: bold;
   }
 
+  /*new*/
+  .stars {
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+  }
+ /*end new*/
+
 
 
 
@@ -40,7 +48,7 @@ body {
     border-color: rgba(19, 19, 19, 0.933);
     background-color: rgba(254, 255, 255, 0.727);
     border-radius: 5%;
-    height: 190px;
+    height: 197px; /* new */
     width: 120px;
     flex-shrink: 0;
     text-align: center;
@@ -129,34 +137,11 @@ body {
 }
 
 
+
+
 @media only screen and (max-width: 780px) {
-
-    .red-suit {
-    font-size: 29px; /*vorher 35 */
-        font-weight: bold;
-  }
-
-  .black-suit {
-    font-size: 29px;
-      font-weight: bold;
-  }
-
-  .crown {
-    font-size: 29px;
-      font-weight: bold;
-  }
-
-  .numbers {
-    font-size:29px;
-      font-weight: bold;
-  }
-
-  .words {
-    font-size:22px;
-      font-weight: bold;
-  }
    .task {
-    height: 140px;
+    height: 143px; /*new vorher 140 */
     width: 90px;
     font-size: 14px;
    }
