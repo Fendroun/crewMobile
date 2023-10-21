@@ -3,7 +3,7 @@ originalDict = {
         "threePlayers": 3,
         "fourPlayers": 3,
         "fivePlayers": 3,
-        "task": "Ich gewinne\n mit einem ♛\n♠9\n"
+        "task": "Ich gewinne\n mit einem ♛\n♠9"
     },
     2: {
         "threePlayers": 4,
@@ -75,7 +75,7 @@ originalDict = {
         "threePlayers": 2,
         "fourPlayers": 3,
         "fivePlayers": 3,
-        "task": "Ich gewinne\ngleich viele\n♠ wie ♡\nin einem Stich\n(>0)"
+        "task": "Ich gewinne\ngleich viele\n♠ wie ♡\nin einem Stich\n(>null)" //new
     },
     14: {
         "threePlayers": 2,
@@ -375,7 +375,7 @@ originalDict = {
         "threePlayers": 3,
         "fourPlayers": 3,
         "fivePlayers": 4,
-        "task": "Ich gewinne\neinen Stich mit Wert größer\n23/28/31\n(ohne ZBDK)"
+        "task": "Ich gewinne\neinen Stich mit Wert größer\n(23/28/31, ohne ZBDK)"
     },
     64: {
         "threePlayers": 3,
@@ -561,7 +561,7 @@ originalDict = {
         "threePlayers": 3,
         "fourPlayers": 3,
         "fivePlayers": 4,
-        "task": "Ich gewinne\neinen Stich mit Wert kleiner\n8/12/16\n(ohne ZBDK)"
+        "task": "Ich gewinne\neinen Stich mit Wert kleiner\n(8/12/16, ohne ZBDK)"
     },
     95: {
         "threePlayers": 1,
@@ -739,9 +739,11 @@ function colorSuits(inputString) {
       // verschiedenes
       inputString = inputString.replace(/(A|X)/g, (match) => `<span class="numbers">${match}</span>`);
       // Wörter
-      inputString = inputString.replace(/(in Folge|nie|mind|genau|gleich|nur|größer|kleiner|weniger Stiche|mehr Stiche|Stiche|Stich|alle Karten|eröffne|gerade|ungerade|ersten|letzten|beiden|keinen)/g, (match) => `<span class="words">${match}</span>`);
+      inputString = inputString.replace(/(in Folge|nie|mind|genau|gleich|nur|größer|kleiner|Stiche|Stich|alle Karten|weniger Stiche|mehr Stiche|eröffne|gerade|ungerade|ersten|letzten|beiden|keinen)/g, (match) => `<span class="words">${match}</span>`);
       // Zahlen
       inputString = inputString.replace(/[0-9x]/g, (match) => `<span class="numbers">${match}</span>`);
+      // Sterne
+      inputString = inputString.replace(/[*]/g, (match) => `<span class="stars">${match}</span>`);
       return inputString;
   }
 /*******************************************/
@@ -749,6 +751,7 @@ function colorSuits(inputString) {
 /*******************************************/
 //shuffle
 taskArray.sort(() => Math.random() - 0.5)
+
 function drawTasks() {
     
     document.querySelectorAll('.task').forEach(taskElement => {
@@ -760,9 +763,7 @@ function drawTasks() {
     });
 
 
- 
-    
-    
+     
     var cardCounter = 1;
     var sum = 0;
 
@@ -790,8 +791,16 @@ function drawTasks() {
             shuffleAndDraw(); 
         }
         else {
-        document.querySelector("#task" + cardCounter).innerHTML = colorSuits(originalDict[taskArray[taskArrayPos]].task.replace(/\n/g, '<br>'));
+            // new
+        var difficulty_stars = "";
+        for(i = originalDict[taskArray[taskArrayPos]][playerCount]; i>0; i--) {
+            difficulty_stars += "*";
+        }
         
+        string_with_difficulty = originalDict[taskArray[taskArrayPos]].task  + "\n" + difficulty_stars ;
+            
+        document.querySelector("#task" + cardCounter).innerHTML = colorSuits(string_with_difficulty.replace(/\n/g, '<br>')); //new
+            // end new
         sum += originalDict[taskArray[taskArrayPos]][playerCount]
         
         taskArrayPos++;
